@@ -1,4 +1,4 @@
-:root,body, html, #root {
+:root,body, html {
   font-family: 'Inter', system-ui, Avenir, Helvetica, sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -14,6 +14,14 @@
   display: flex;
   justify-content: center; /* Centra los elementos horizontalmente */
   align-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 /* Estilo para los contenedores principales */
