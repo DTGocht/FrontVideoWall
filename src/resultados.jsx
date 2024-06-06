@@ -32,7 +32,7 @@ const Resultados = ({ matricula }) => {
         ) : reservas.length > 0 ? (
           reservas.map((reserva) => (
             <div key={reserva.id_reserva} className="reserva">
-              <p>ID: {reserva.id_reserva}</p>
+              <p>#Reserva: {reserva.id_reserva}</p>
               <div>Sala: {reserva.nombre_sala}</div>
               <p>Reserva: {new Date(reserva.dia_reserva).toLocaleDateString('es-MX', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'})}</p>
                 <p>Inicio: {new Date(reserva.hora_inicio).toLocaleTimeString('es-MX', {hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC'})
