@@ -1,0 +1,43 @@
+:root,body, html, #root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2D306D;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right; /* Centra los elementos horizontalmente */
+  align-items: center;
+}
+
+/* Estilo para los contenedores principales */
+.body2, .body3 {
+  flex: 1; /* Distribuye el espacio igualmente entre los contenedores */
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Alinea los hijos verticalmente */
+  align-items: center; /* Centra los hijos horizontalmente */
+  justify-content: center; /* Centra los hijos verticalmente */
+  gap: 30px;
+  padding: 50px;/* Espacio dentro de los contenedores */
+  /* Borde para visualizar los contenedores */
+   /* Sombra para profundidad */
+}
+
+.body1 {
+  flex: 1; /* Distribuye el espacio igualmente entre los contenedores */
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Alinea los hijos verticalmente */
+  align-items: center; /* Centra los hijos horizontalmente */
+  justify-content: center; /* Centra los hijos verticalmente */
+  gap: 50px; /* Espacio entre los hijos */
+  padding: 70px;
+  width: 850px /* Limita el ancho del contenedor */
+}
+
+.all-bodys{
+  display: flex;
+  
+  
+}

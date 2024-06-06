@@ -1,0 +1,188 @@
+.eventos-container {
+  background-color: #4AA4BD;
+  color: white;
+  padding: 30px 20px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  width: 100%; 
+  height: 390px;/* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+ 
+}
+
+.eventos-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  padding: 10px;
+  height: 70px;
+  border-radius: 1px;
+}
+
+.event-item:nth-child(odd) {
+  background-color: #B3C7DE; /* Solid color for odd items */
+}
+
+.event-item:nth-child(even) {
+  background-color: rgba(179, 199, 222, 0.7); /* 70% opacity for even items */
+}
+
+.event-icon {
+  width: 10%; /* Adjust size as needed */
+  margin-right: 2%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.event-info {
+  flex-grow: 1;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 150%;
+  color: #333;
+}
+
+.event-description {
+  font-size: 110%;
+  opacity: 0.8; /* Lighten the text slightly */
+  color: #333;
+  width: 600px; /* Asegúrate de ajustar esto según el diseño de tu página */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.event-arrow {
+  font-size: 200%;
+  margin-right: 2%;
+  opacity: 50%;
+  
+}
+
+.evento-container{
+  width: 100%;
+  height: 100%; 
+}
+
+
+
+
+.in-evento{
+  width: 100%;
+  height: 85%;
+  background-color: rgba(179, 199, 222, 0.7);
+  border-radius: 10px;
+  display: flex;
+  overflow: auto;
+}
+
+.in-evento::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.in-evento::-webkit-scrollbar-thumb {
+  background-color: #356889; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.in-imagen{
+  width:40%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-imagen img{
+  width: 90%;
+  
+  border-radius: 10px;
+}
+
+.in-texto{
+  width: 60%;
+  height: 100%;
+  padding: 10px 20px;
+  display: top;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+  
+}
+
+.in-texto h2{
+  font-size: 2rem;
+  color:#3a4f67;
+}
+
+.in-texto p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:#3a4f67;
+}
+
+.header-eventos{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.eventos-padre{
+  overflow-y: auto;
+  height: 360px;
+}
+
+
+  /* Custom scrollbar styles */
+  .eventos-padre::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .eventos-padre::-webkit-scrollbar-thumb {
+    background-color: #356889; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .eventos-padre::-webkit-scrollbar-thumb:hover {
+    background-color: #444; /* Slightly lighter color on hover */
+  }
+  
+  .eventos-padre::-webkit-scrollbar-track {
+    background: transparent; /* Make the track background transparent */
+  }
+  
+  /* Optional: For browsers that support scrollbar-gutter */
+  .eventos-padre {
+    scrollbar-gutter: stable both-edges;
+  }
+
+.volver-boton{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  position: absolute;
+  left: 0;
+    /* Matches the input width if necessary */
+  padding: 10px;
+  background-color: #4A89C7;
+  cursor: pointer;
+  font-size: 20px;
+  
+  border-style: none;
+  color: white;
+
+}

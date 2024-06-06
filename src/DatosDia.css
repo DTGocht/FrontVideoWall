@@ -1,0 +1,61 @@
+.datos-dia {
+  /* Deep blue background */
+ color: white; /* White text color */
+ display: flex; /* Align items in a row */
+ justify-content: space-around; /* Even space between items */
+ padding: 10px 20px; /* Padding around the content */
+ border-radius: 5px; /* Rounded corners */
+ font-family: 'Inter', sans-serif; /* Font style */
+ font-size: 30px; /* Text size */
+}
+
+.icon {
+ display: inline-block; /* Ensures the icon aligns correctly with the text */
+ vertical-align: middle; /* Aligns the icon vertically with the text */
+ margin-right: 40px; /* Space between the icon and the text */
+ width: 45px; /* Specify a fixed width for icons */
+ height: 80%; /* Specify a fixed height for icons */
+ 
+}
+
+.time, .temperature, .weather {
+ display: flex; /* Flexbox for aligning the icon and text */
+ align-items: center; /* Vertical alignment */
+ padding:  0; /* Padding for each section */
+ padding-left: 50px; /* Left padding for the text */
+}
+.date {
+ display: flex; /* Flexbox for aligning the icon and text */
+ align-items: center; /* Vertical alignment */
+ padding:  0; /* Padding for each section */
+ padding-left: 20px; /* Left padding for the text */
+}
+
+
+.date, .time {
+ flex: 1; /* Allows date and time to take up equal space */
+}
+
+
+.DreamLab-titulo {
+ display: flex; 
+ align-items: center; /* Center items vertically */
+ justify-content: center; /* Center items horizontally */
+ flex-direction: column; /* Stack items vertically */
+ padding-top: 50px; /* Space above the text */
+ padding-bottom: 10%;
+ text-align: center; /* Center the text */
+  
+}
+
+.DreamLab-titulo img {
+ margin-bottom: 0%; /* Space between the logo and the text */
+}
+
+h1 {
+ margin: 0; /* Remove default margin */
+ color: white; /* Set text color */
+ font-size: 50px; /* Example font size */
+}
+
+

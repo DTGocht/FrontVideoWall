@@ -1,0 +1,98 @@
+
+.room-father {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Distributes space between the child elements */
+  align-items: flex-start; /* Aligns items to the start of the flex container */
+  padding-bottom: 5%; /* Optional: adds some padding inside the room-father */
+  gap: 7%; /* Optional: adds gap between the child containers */
+}
+.room-container {
+    background-color: #4AA4BD;
+    color: white;
+    padding: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 350px;
+    height: 380.438px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .room-title {
+    font-size: 150%;
+    padding-top: -20px;
+    padding-bottom: -20px;
+    padding-left: 8px;
+    margin-top: -5%;
+
+  }
+
+  .salas-container{
+    height: 350px;
+    overflow-y: auto;
+  }
+
+  /* Custom scrollbar styles */
+.salas-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.salas-container::-webkit-scrollbar-thumb {
+  background-color: #356889; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.salas-container::-webkit-scrollbar-thumb:hover {
+  background-color: #444; /* Slightly lighter color on hover */
+}
+
+.salas-container::-webkit-scrollbar-track {
+  background: transparent; /* Make the track background transparent */
+}
+
+/* Optional: For browsers that support scrollbar-gutter */
+.salas-container {
+  scrollbar-gutter: stable both-edges;
+}
+  
+  .room {
+    display: flex;
+    align-items: center; /* Aligns the items vertically */
+    margin-top: 1px;
+    padding: 5%;
+    border-radius: 2px;
+    color: #333;
+  }
+  
+  .room:nth-child(odd) {
+    background-color: #B3C7DE; /* Solid color for odd items */
+  }
+  
+  .room:nth-child(even) {
+    background-color: rgba(179, 199, 222, 0.7); /* 70% opacity for even items */
+  }
+  
+  .room-name {
+    font-size: 150%;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .room-time {
+    font-size: 100%;
+    color: #555;
+  }
+
+  .room-image {
+    width: 25%; /* Set a fixed width for the image */
+    /* Set a fixed height for the image */
+    margin-right: 5%; 
+    margin-left: 1%;/* Adds some spacing between the image and the text */
+    border-radius: 5px; /* Optional: rounds the corners of the image */
+    ;
+  }
+  
+  .room-details {
+    display: flex;
+    flex-direction: column;
+    
+  }
