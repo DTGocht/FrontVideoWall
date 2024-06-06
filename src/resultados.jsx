@@ -14,7 +14,13 @@ const Resultados = ({ matricula }) => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setReservas(data);
+        // Filtramos las reservas para mantener solo las de hoy o futuras
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Reset the time part to start of the day
+        const reservasFiltradas = data.filter(reserva => 
+          new Date(reserva.dia_reserva) >= today
+        );
+        setReservas(reservasFiltradas);
       } catch (error) {
         console.error('Failed to fetch data:', error);
       }
@@ -32,11 +38,11 @@ const Resultados = ({ matricula }) => {
         ) : reservas.length > 0 ? (
           reservas.map((reserva) => (
             <div key={reserva.id_reserva} className="reserva">
-              <p>#Reserva: {reserva.id_reserva}</p>
+              <p>Número de Reserva: {reserva.id_reserva}</p>
               <div>Sala: {reserva.nombre_sala}</div>
               <p>Reserva: {new Date(reserva.dia_reserva).toLocaleDateString('es-MX', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'})}</p>
-                <p>Inicio: {new Date(reserva.hora_inicio).toLocaleTimeString('es-MX', {hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC'})
-                  } Final: {new Date(reserva.hora_final).toLocaleTimeString('es-MX', {hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC'})}</p>
+              <p>Inicio: {new Date(reserva.hora_inicio).toLocaleTimeString('es-MX', {hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC'})
+                } Final: {new Date(reserva.hora_final).toLocaleTimeString('es-MX', {hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'UTC'})}</p>
             </div>
           ))
         ) : (
