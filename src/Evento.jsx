@@ -19,6 +19,7 @@ const Evento = ({evento}) => {
         <h2>{evento.title}</h2>
         <p>{evento.description}</p>
         <p> {evento.nombre_sala}</p>
+        <p>Dia del evento: {evento.dia}</p>
         <p>Hora de Inicio: {evento.hora_inicio} </p>
         <p>Hora Final: {evento.hora_final} </p>
         </div>

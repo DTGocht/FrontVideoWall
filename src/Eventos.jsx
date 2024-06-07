@@ -18,6 +18,7 @@ const Eventos = () => {
           id: evento._id,
           icon: evento.imagen, // Asegúrate de tener las imágenes localmente o ajusta esta ruta
           title: evento.titulo,
+          dia: evento.dia_evento,
           description: evento.descripcion,
           hora_inicio: evento.duracion_i,
           hora_final: evento.duracion_f,
