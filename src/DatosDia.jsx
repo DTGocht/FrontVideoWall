@@ -31,7 +31,7 @@ const DatosDia = () => {
     return date.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
-      hour12: true,
+      hour12: false,
     });
   };
 
@@ -51,6 +51,7 @@ const DatosDia = () => {
           <img src={nube}  className="icon" /> {weatherCondition} {temperature}
         </div>
       </div>
+      
       <div className='DreamLab-titulo'>
         <img src={DreamI}/>
         <h1>D.R.E.A.M</h1>

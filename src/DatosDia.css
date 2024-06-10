@@ -12,8 +12,8 @@
 .icon {
  display: inline-block; /* Ensures the icon aligns correctly with the text */
  vertical-align: middle; /* Aligns the icon vertically with the text */
- margin-right: 40px; /* Space between the icon and the text */
- width: 45px; /* Specify a fixed width for icons */
+ margin-right: 20px; /* Space between the icon and the text */
+ width: 67px; /* Specify a fixed width for icons */
  height: 80%; /* Specify a fixed height for icons */
  
 }
@@ -42,20 +42,24 @@
  align-items: center; /* Center items vertically */
  justify-content: center; /* Center items horizontally */
  flex-direction: column; /* Stack items vertically */
- padding-top: 50px; /* Space above the text */
- padding-bottom: 10%;
+ padding-top: 26%; /* Space above the text */
+ padding-bottom: 0%;
  text-align: center; /* Center the text */
   
 }
 
 .DreamLab-titulo img {
- margin-bottom: 0%; /* Space between the logo and the text */
+ margin-bottom: 10%; /* Space between the logo and the text */
+ position: absolute;
+ width: 6%;
 }
 
 h1 {
- margin: 0; /* Remove default margin */
- color: white; /* Set text color */
- font-size: 50px; /* Example font size */
+  margin: 0; /* Elimina el margen por defecto */
+  color: white; /* Establece el color del texto a blanco */
+  font-size: 70px; /* Establece el tamaño de la fuente a 50px */
+  font-family: 'Montserrat', sans-serif; /* Usa Montserrat como la fuente, con sans-serif como fallback */
 }
+
 
 
