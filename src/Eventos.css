@@ -1,5 +1,6 @@
 .eventos-container {
-  background-color: #4AA4BD;
+  background-color:#4aa4bd;
+  background-image: linear-gradient(135deg,#4aa4bd 0%, #9599E2 100%);
   color: white;
   padding: 30px 20px;
   padding-bottom: 50px;

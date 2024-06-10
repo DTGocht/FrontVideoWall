@@ -7,15 +7,17 @@
   gap: 7%; /* Optional: adds gap between the child containers */
 }
 .room-container {
-    background-color: #4AA4BD;
-    color: white;
-    padding: 30px;
-    padding-bottom: 30px;
-    border-radius: 10px;
-    width: 350px;
-    height: 380.438px;
-    font-family: 'Inter', sans-serif;
-  }
+  background-color:#4aa4bd;
+  background-image: linear-gradient(135deg,#4aa4bd 0%, #9599E2 100%);
+
+  color: white;
+  padding: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  width: 350px;
+  height: 380.438px;
+  font-family: 'Inter', sans-serif;
+}
   
   .room-title {
     font-size: 150%;
